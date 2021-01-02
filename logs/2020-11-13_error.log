@@ -1,0 +1,942 @@
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [19732] using statreload
+INFO main.py:422 Started server process [17028]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT pro_no,username,project_name,address,capacity,manager_id,cust_contact,cust_phone,cust_company_name,org_name,org_qualification,img_checker,checker_phone,refuse_reason,create_time from b_job ORDER BY b_job.create_time ASC 
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [4644] using statreload
+INFO main.py:434 Started server process [11596]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [18108] using statreload
+INFO main.py:434 Started server process [10200]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(1) AS total, DATE_FORMAT(b_job.create_time,'%Y-%m-%d') AS days from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 GROUP BY days ORDER BY days DESC;
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(1) AS total, DATE_FORMAT(b_job.create_time,'%Y-%m-%d') AS days from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND (b_job_flow.status=1 or b_job_flow.status=4) GROUP BY days ORDER BY days DESC;
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [12432] using statreload
+INFO main.py:434 Started server process [18408]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [12124] using statreload
+INFO main.py:434 Started server process [16320]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [11900] using statreload
+INFO main.py:434 Started server process [18372]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [10200] using statreload
+INFO main.py:434 Started server process [10412]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [16948] using statreload
+INFO main.py:434 Started server process [12952]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [7280] using statreload
+INFO main.py:434 Started server process [748]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id FROM b_customer_manager WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:388 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [7856] using statreload
+INFO main.py:434 Started server process [7816]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id FROM b_customer_manager WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:select id from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+INFO db_con.py:81 数据库关闭成功.

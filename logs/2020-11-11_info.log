@@ -1,0 +1,2273 @@
+2020-11-11 00:00:49, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:00:49, Wed basereload.py[line:47] INFO Started reloader process [17736] using statreload
+2020-11-11 00:00:50, Wed main.py[line:422] INFO Started server process [19044]
+2020-11-11 00:00:50, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:00:50, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:00:52, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:00:52, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:01:36, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:01:36, Wed basereload.py[line:47] INFO Started reloader process [10304] using statreload
+2020-11-11 00:01:37, Wed main.py[line:422] INFO Started server process [18124]
+2020-11-11 00:01:37, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:01:37, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:01:39, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:01:39, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:02:15, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:02:15, Wed basereload.py[line:47] INFO Started reloader process [20316] using statreload
+2020-11-11 00:02:16, Wed main.py[line:422] INFO Started server process [15040]
+2020-11-11 00:02:16, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:02:16, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:02:18, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:02:18, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:02:45, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:02:45, Wed basereload.py[line:47] INFO Started reloader process [19416] using statreload
+2020-11-11 00:02:46, Wed main.py[line:422] INFO Started server process [5376]
+2020-11-11 00:02:46, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:02:46, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:02:49, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:03:26, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\views.py'. Reloading...
+2020-11-11 00:03:27, Wed main.py[line:422] INFO Started server process [19060]
+2020-11-11 00:03:27, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:03:27, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:03:52, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:03:52, Wed basereload.py[line:47] INFO Started reloader process [16484] using statreload
+2020-11-11 00:03:53, Wed main.py[line:422] INFO Started server process [18232]
+2020-11-11 00:03:53, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:03:53, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:03:56, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:03:56, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:04:52, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:04:52, Wed basereload.py[line:47] INFO Started reloader process [18280] using statreload
+2020-11-11 00:04:53, Wed main.py[line:422] INFO Started server process [15560]
+2020-11-11 00:04:53, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:04:53, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:04:55, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:04:55, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:06:35, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:06:35, Wed basereload.py[line:47] INFO Started reloader process [14824] using statreload
+2020-11-11 00:06:36, Wed main.py[line:422] INFO Started server process [16600]
+2020-11-11 00:06:36, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:06:36, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:06:41, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:06:41, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:06:47, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 135, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\ProgramData\Anaconda3\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\contextvars\__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "F:\python\fast_api\app\api\user\views.py", line 159, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:09:49, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:09:49, Wed basereload.py[line:47] INFO Started reloader process [18332] using statreload
+2020-11-11 00:09:50, Wed main.py[line:422] INFO Started server process [5764]
+2020-11-11 00:09:50, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:09:50, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:09:53, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:09:53, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\user\views.py", line 158, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:10:15, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:10:15, Wed basereload.py[line:47] INFO Started reloader process [19856] using statreload
+2020-11-11 00:10:15, Wed main.py[line:422] INFO Started server process [18604]
+2020-11-11 00:10:15, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:10:15, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:10:21, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:10:21, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:10:26, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\user\views.py", line 158, in user_information
+    result,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:11:10, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:11:10, Wed basereload.py[line:47] INFO Started reloader process [13056] using statreload
+2020-11-11 00:11:11, Wed main.py[line:422] INFO Started server process [20440]
+2020-11-11 00:11:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:11:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:11:13, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:11:34, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\views.py'. Reloading...
+2020-11-11 00:11:35, Wed main.py[line:422] INFO Started server process [15300]
+2020-11-11 00:11:35, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:11:35, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:12:07, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:12:07, Wed basereload.py[line:47] INFO Started reloader process [13816] using statreload
+2020-11-11 00:12:08, Wed main.py[line:422] INFO Started server process [15400]
+2020-11-11 00:12:08, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:12:08, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:12:09, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:12:09, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\user\views.py", line 158, in user_information
+    result1,dic = curd_category.user_information(req_dict)
+ValueError: too many values to unpack (expected 2)
+2020-11-11 00:12:49, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:12:49, Wed basereload.py[line:47] INFO Started reloader process [9588] using statreload
+2020-11-11 00:12:50, Wed main.py[line:422] INFO Started server process [18916]
+2020-11-11 00:12:50, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:12:50, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:12:51, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:12:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_user WHERE id=%s
+2020-11-11 00:12:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 00:14:23, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:14:23, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_user WHERE id=%s
+2020-11-11 00:14:23, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 00:15:06, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:15:07, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\user\views.py", line 134, in control_select
+    return JSONResponse(return_dict)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\responses.py", line 49, in __init__
+    self.body = self.render(content)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\responses.py", line 162, in render
+    separators=(",", ":"),
+  File "D:\ProgramData\Anaconda3\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\ProgramData\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\ProgramData\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\ProgramData\Anaconda3\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Timestamp' is not JSON serializable
+2020-11-11 00:16:15, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:16:15, Wed basereload.py[line:47] INFO Started reloader process [18380] using statreload
+2020-11-11 00:16:16, Wed main.py[line:422] INFO Started server process [16224]
+2020-11-11 00:16:16, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:16:16, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:16:20, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:17:04, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 00:17:04, Wed basereload.py[line:47] INFO Started reloader process [20092] using statreload
+2020-11-11 00:17:05, Wed main.py[line:422] INFO Started server process [16168]
+2020-11-11 00:17:05, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 00:17:05, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 00:17:07, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:18:21, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 00:18:43, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 12:05:32, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 12:05:32, Wed basereload.py[line:47] INFO Started reloader process [11560] using statreload
+2020-11-11 12:05:33, Wed main.py[line:434] INFO Started server process [12752]
+2020-11-11 12:05:33, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 12:05:33, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 12:07:02, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 12:07:02, Wed basereload.py[line:47] INFO Started reloader process [6368] using statreload
+2020-11-11 12:07:03, Wed main.py[line:434] INFO Started server process [9316]
+2020-11-11 12:07:03, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 12:07:03, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 12:07:56, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 12:07:56, Wed basereload.py[line:47] INFO Started reloader process [13336] using statreload
+2020-11-11 12:07:57, Wed main.py[line:434] INFO Started server process [15608]
+2020-11-11 12:07:57, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 12:07:57, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 12:08:09, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 12:08:09, Wed basereload.py[line:47] INFO Started reloader process [14760] using statreload
+2020-11-11 12:08:11, Wed main.py[line:434] INFO Started server process [11928]
+2020-11-11 12:08:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 12:08:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 12:09:21, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\crud\user.py'. Reloading...
+2020-11-11 12:09:23, Wed main.py[line:434] INFO Started server process [11064]
+2020-11-11 12:09:23, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 12:09:23, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:06:11, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:06:11, Wed basereload.py[line:47] INFO Started reloader process [12784] using statreload
+2020-11-11 14:06:12, Wed main.py[line:434] INFO Started server process [4764]
+2020-11-11 14:06:12, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:06:12, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:06:50, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:06:50, Wed basereload.py[line:47] INFO Started reloader process [12760] using statreload
+2020-11-11 14:06:51, Wed main.py[line:434] INFO Started server process [6784]
+2020-11-11 14:06:51, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:06:51, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:07:09, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\views.py'. Reloading...
+2020-11-11 14:07:10, Wed main.py[line:434] INFO Started server process [1556]
+2020-11-11 14:07:10, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:07:10, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:08:30, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:08:30, Wed basereload.py[line:47] INFO Started reloader process [4056] using statreload
+2020-11-11 14:08:31, Wed main.py[line:434] INFO Started server process [13692]
+2020-11-11 14:08:31, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:08:31, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:09:16, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:09:16, Wed basereload.py[line:47] INFO Started reloader process [13520] using statreload
+2020-11-11 14:09:17, Wed main.py[line:434] INFO Started server process [11320]
+2020-11-11 14:09:17, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:09:17, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:09:54, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:09:54, Wed basereload.py[line:47] INFO Started reloader process [5740] using statreload
+2020-11-11 14:09:55, Wed main.py[line:434] INFO Started server process [15764]
+2020-11-11 14:09:55, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:09:55, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:10:43, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:10:43, Wed basereload.py[line:47] INFO Started reloader process [12956] using statreload
+2020-11-11 14:10:44, Wed main.py[line:434] INFO Started server process [2612]
+2020-11-11 14:10:44, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:10:44, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:11:10, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:11:10, Wed basereload.py[line:47] INFO Started reloader process [10260] using statreload
+2020-11-11 14:11:11, Wed main.py[line:434] INFO Started server process [8456]
+2020-11-11 14:11:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:11:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:12:33, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:12:33, Wed basereload.py[line:47] INFO Started reloader process [6028] using statreload
+2020-11-11 14:12:35, Wed main.py[line:434] INFO Started server process [11900]
+2020-11-11 14:12:35, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:12:35, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:14:01, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:14:01, Wed basereload.py[line:47] INFO Started reloader process [2860] using statreload
+2020-11-11 14:14:02, Wed main.py[line:434] INFO Started server process [2204]
+2020-11-11 14:14:02, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:14:02, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:14:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:14:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:09, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:09, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:09, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:09, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:09, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:09, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:54, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:14:54, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:55, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:55, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:14:55, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:14:55, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:15:21, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:15:21, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:15:26, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:15:26, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:15:33, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:15:33, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:15:40, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:15:40, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:16:27, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_role SET code =%s,role_name=%s,create_time=%s WHERE id =%s
+2020-11-11 14:16:27, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:28, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:16:28, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:28, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:28, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:28, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:28, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:28, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:28, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:29, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:29, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:29, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:29, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:29, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:29, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:30, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:30, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:30, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:30, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:16:30, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:16:30, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:02, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_role SET code =%s,role_name=%s,create_time=%s WHERE id =%s
+2020-11-11 14:17:02, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:06, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:17:06, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:06, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:06, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:06, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:06, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:07, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:07, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:07, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:07, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:07, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:07, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:17:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:17:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:21:42, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:21:42, Wed basereload.py[line:47] INFO Started reloader process [14896] using statreload
+2020-11-11 14:21:43, Wed main.py[line:434] INFO Started server process [12284]
+2020-11-11 14:21:43, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:21:43, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:23:08, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\views.py'. Reloading...
+2020-11-11 14:23:10, Wed main.py[line:434] INFO Started server process [8096]
+2020-11-11 14:23:10, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:23:10, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:23:55, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:23:55, Wed basereload.py[line:47] INFO Started reloader process [6236] using statreload
+2020-11-11 14:23:56, Wed main.py[line:434] INFO Started server process [15628]
+2020-11-11 14:23:56, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:23:56, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:24:58, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:24:58, Wed basereload.py[line:47] INFO Started reloader process [15084] using statreload
+2020-11-11 14:24:59, Wed main.py[line:434] INFO Started server process [5384]
+2020-11-11 14:24:59, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:24:59, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:25:28, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:25:28, Wed basereload.py[line:47] INFO Started reloader process [15460] using statreload
+2020-11-11 14:25:29, Wed main.py[line:434] INFO Started server process [2168]
+2020-11-11 14:25:29, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:25:29, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:27:08, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:27:08, Wed basereload.py[line:47] INFO Started reloader process [15444] using statreload
+2020-11-11 14:27:09, Wed main.py[line:434] INFO Started server process [13028]
+2020-11-11 14:27:09, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:27:09, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:27:16, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:27:16, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:27:16, Wed db_con.py[line:64] ERROR 数据库连接失败.
+	ERROR:(1292, "Truncated incorrect DOUBLE value: 'string'")
+2020-11-11 14:27:17, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:27:17, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:27:17, Wed db_con.py[line:64] ERROR 数据库连接失败.
+	ERROR:(1292, "Truncated incorrect DOUBLE value: 'string'")
+2020-11-11 14:27:46, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:27:46, Wed basereload.py[line:47] INFO Started reloader process [8160] using statreload
+2020-11-11 14:27:47, Wed main.py[line:434] INFO Started server process [6204]
+2020-11-11 14:27:47, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:27:47, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:28:01, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:28:01, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:02, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:02, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:02, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:02, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:02, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:02, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:02, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:02, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:03, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:03, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:03, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:03, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:09, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:28:09, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:09, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:09, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:10, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:10, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:11, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:11, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:11, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:11, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:11, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:28:11, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:50, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:28:50, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:50, Wed db_con.py[line:64] ERROR 数据库连接失败.
+	ERROR:(1292, "Truncated incorrect DOUBLE value: 'string'")
+2020-11-11 14:28:50, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:28:50, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:28:51, Wed db_con.py[line:64] ERROR 数据库连接失败.
+	ERROR:(1292, "Truncated incorrect DOUBLE value: 'string'")
+2020-11-11 14:30:05, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:30:05, Wed basereload.py[line:47] INFO Started reloader process [4332] using statreload
+2020-11-11 14:30:06, Wed main.py[line:434] INFO Started server process [2112]
+2020-11-11 14:30:06, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:30:06, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:30:38, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:30:38, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:38, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:38, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:38, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:38, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:39, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:39, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:39, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:39, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:39, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:39, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:40, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:30:40, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:30:52, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:30:52, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:32:19, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:32:19, Wed basereload.py[line:47] INFO Started reloader process [10860] using statreload
+2020-11-11 14:32:20, Wed main.py[line:434] INFO Started server process [9840]
+2020-11-11 14:32:20, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:32:20, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:33:36, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:33:36, Wed basereload.py[line:47] INFO Started reloader process [2720] using statreload
+2020-11-11 14:33:37, Wed main.py[line:434] INFO Started server process [3240]
+2020-11-11 14:33:37, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:33:37, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:34:32, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:34:32, Wed basereload.py[line:47] INFO Started reloader process [7928] using statreload
+2020-11-11 14:34:33, Wed main.py[line:434] INFO Started server process [11156]
+2020-11-11 14:34:33, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:34:33, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:34:53, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:34:53, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:34:54, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:34:54, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:36:33, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\crud\user.py'. Reloading...
+2020-11-11 14:36:34, Wed main.py[line:434] INFO Started server process [7396]
+2020-11-11 14:36:34, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:36:34, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:40:29, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:40:29, Wed basereload.py[line:47] INFO Started reloader process [2632] using statreload
+2020-11-11 14:40:31, Wed main.py[line:434] INFO Started server process [10012]
+2020-11-11 14:40:31, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:40:31, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:40:48, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:40:48, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:40:49, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:40:49, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:40:49, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:40:49, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:40:56, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:40:56, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:41:31, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:41:31, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:41:31, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:41:31, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:41:44, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:41:44, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:41:45, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:41:45, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:41:47, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:41:47, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:42:22, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_role SET code =%s,role_name=%s,create_time=%s WHERE id =%s
+2020-11-11 14:42:22, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:42:23, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:42:23, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:42:29, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:42:29, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:42:52, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_role SET code =%s,role_name=%s,create_time=%s WHERE id =%s
+2020-11-11 14:42:52, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:42:53, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:42:53, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:42:53, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:42:53, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:42:53, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role_resource(role_id,resource_id) VALUES (%s,%s)
+2020-11-11 14:42:53, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:43:00, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:43:00, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:43:22, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_role(id,code,role_name,available,create_time) VALUES (%s,%s,%s,%s,%s)
+2020-11-11 14:43:22, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:43:43, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_resource.id,sys_resource.`name` from sys_resource,sys_role_resource WHERE sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 14:43:43, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:43:54, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:43:54, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:43:54, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:43:54, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:43:55, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role` WHERE id = %s
+2020-11-11 14:43:55, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:43:55, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_role_resource` WHERE role_id = %s
+2020-11-11 14:43:55, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:45:21, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:45:21, Wed basereload.py[line:47] INFO Started reloader process [13084] using statreload
+2020-11-11 14:45:22, Wed main.py[line:434] INFO Started server process [10260]
+2020-11-11 14:45:22, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:45:22, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:45:32, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:32, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:32, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:32, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:33, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:33, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:33, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:33, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:33, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:33, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:33, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:33, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:34, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:34, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:45:34, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_resource WHERE group_name=%s
+2020-11-11 14:45:34, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 14:47:27, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:47:27, Wed basereload.py[line:47] INFO Started reloader process [15764] using statreload
+2020-11-11 14:47:28, Wed main.py[line:434] INFO Started server process [15648]
+2020-11-11 14:47:28, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:47:28, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:47:33, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_resource(id,method,uri,role_name,name,create_time,group_name) VALUES (%s,%s,%s,%s,%s,%s,%s)
+2020-11-11 14:47:33, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:49:12, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_resource SET name=%s,method=%s,uri=%s,create_time=%s WHERE id =%s
+2020-11-11 14:49:12, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:50:53, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:50:53, Wed basereload.py[line:47] INFO Started reloader process [13416] using statreload
+2020-11-11 14:50:55, Wed main.py[line:434] INFO Started server process [12872]
+2020-11-11 14:50:55, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:50:55, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:52:50, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:52:50, Wed basereload.py[line:47] INFO Started reloader process [7524] using statreload
+2020-11-11 14:52:51, Wed main.py[line:434] INFO Started server process [2100]
+2020-11-11 14:52:51, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:52:51, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:53:55, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:53:55, Wed basereload.py[line:47] INFO Started reloader process [796] using statreload
+2020-11-11 14:53:56, Wed main.py[line:434] INFO Started server process [7480]
+2020-11-11 14:53:56, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:53:56, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:55:09, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:55:09, Wed basereload.py[line:47] INFO Started reloader process [12032] using statreload
+2020-11-11 14:55:11, Wed main.py[line:434] INFO Started server process [9808]
+2020-11-11 14:55:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:55:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:55:29, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:55:29, Wed basereload.py[line:47] INFO Started reloader process [15936] using statreload
+2020-11-11 14:55:30, Wed main.py[line:434] INFO Started server process [15608]
+2020-11-11 14:55:30, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:55:30, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:56:09, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:56:09, Wed basereload.py[line:47] INFO Started reloader process [10388] using statreload
+2020-11-11 14:56:10, Wed main.py[line:434] INFO Started server process [2436]
+2020-11-11 14:56:10, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:56:10, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:56:36, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:56:36, Wed basereload.py[line:47] INFO Started reloader process [14460] using statreload
+2020-11-11 14:56:37, Wed main.py[line:434] INFO Started server process [8940]
+2020-11-11 14:56:37, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:56:37, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:57:12, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\user\views.py'. Reloading...
+2020-11-11 14:57:13, Wed main.py[line:434] INFO Started server process [1480]
+2020-11-11 14:57:13, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:57:13, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:57:38, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:57:38, Wed basereload.py[line:47] INFO Started reloader process [15576] using statreload
+2020-11-11 14:57:39, Wed main.py[line:434] INFO Started server process [14620]
+2020-11-11 14:57:39, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:57:39, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:57:43, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_resource` WHERE id = %s
+2020-11-11 14:57:43, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 14:59:34, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 14:59:34, Wed basereload.py[line:47] INFO Started reloader process [12792] using statreload
+2020-11-11 14:59:36, Wed main.py[line:434] INFO Started server process [13624]
+2020-11-11 14:59:36, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 14:59:36, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 14:59:41, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_user WHERE id=%s
+2020-11-11 14:59:41, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:00:59, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_user WHERE id=%s
+2020-11-11 15:00:59, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:01:29, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:01:29, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:01:30, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_user SET username =%s,nick_name=%s,face_img=%s,update_time=%s WHERE id =%s
+2020-11-11 15:01:30, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:03:01, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:03:01, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:03:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:03:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:03:40, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO `b_customer_manager`(id, user_id, cust_name, org_name, tel, phone, company,job_number,profile,image,create_time) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+2020-11-11 15:03:40, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:03:40, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_user_role(user_id,role_id) VALUES (%s,%s)
+2020-11-11 15:03:40, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:03:40, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_user(id,username,password,openid,nick_name,face_img,create_time) VALUES (%s,%s,%s,%s,%s,%s,%s)
+2020-11-11 15:03:40, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:04:40, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * FROM sys_user WHERE id=%s
+2020-11-11 15:04:40, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:05:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:05:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:05:04, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_user SET username =%s,nick_name=%s,face_img=%s,update_time=%s WHERE id =%s
+2020-11-11 15:05:04, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:09:42, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_user SET `password`=%s WHERE id =%s
+2020-11-11 15:09:42, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:10:30, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:10:30, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:10:30, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:10:30, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:10:40, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:10:40, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:10:40, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 15:10:40, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:27, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 15:18:27, Wed basereload.py[line:47] INFO Started reloader process [15204] using statreload
+2020-11-11 15:18:28, Wed main.py[line:434] INFO Started server process [6812]
+2020-11-11 15:18:28, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 15:18:28, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 15:18:48, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,nick_name,face_img,create_time from sys_user ORDER BY create_time DESC  limit 0,10
+2020-11-11 15:18:48, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:48, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from sys_user
+2020-11-11 15:18:48, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:18:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:18:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:19:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,nick_name,face_img,create_time from sys_user ORDER BY create_time DESC  limit 10,10
+2020-11-11 15:19:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:19:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from sys_user
+2020-11-11 15:19:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:19:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:19:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,nick_name,face_img,create_time from sys_user ORDER BY create_time DESC  limit 0,10
+2020-11-11 15:20:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from sys_user
+2020-11-11 15:20:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:18, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:18, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:18, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:18, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:18, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:18, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:18, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:18, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:20:19, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:20:19, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:22:07, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 15:22:07, Wed basereload.py[line:47] INFO Started reloader process [3380] using statreload
+2020-11-11 15:22:09, Wed main.py[line:434] INFO Started server process [1480]
+2020-11-11 15:22:09, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 15:22:09, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 15:25:01, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 15:25:01, Wed basereload.py[line:47] INFO Started reloader process [2784] using statreload
+2020-11-11 15:25:02, Wed main.py[line:434] INFO Started server process [16056]
+2020-11-11 15:25:02, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 15:25:02, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 15:25:07, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_user SET username =%s,nick_name=%s,`password`=%s,face_img=%s,update_time=%s WHERE id =%s
+2020-11-11 15:25:07, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:25:08, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_user_role` WHERE user_id = %s
+2020-11-11 15:25:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:25:08, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_user_role(user_id,role_id) VALUES (%s,%s)
+2020-11-11 15:25:08, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:25:59, Wed db_con.py[line:58] INFO SQL执行成功:UPDATE sys_user SET username =%s,nick_name=%s,`password`=%s,face_img=%s,update_time=%s WHERE id =%s
+2020-11-11 15:25:59, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:25:59, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_user_role` WHERE user_id = %s
+2020-11-11 15:25:59, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:25:59, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_user_role(user_id,role_id) VALUES (%s,%s)
+2020-11-11 15:25:59, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:26:00, Wed db_con.py[line:58] INFO SQL执行成功:INSERT INTO sys_user_role(user_id,role_id) VALUES (%s,%s)
+2020-11-11 15:26:00, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:26:21, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,nick_name,face_img,create_time from sys_user ORDER BY create_time DESC  limit 0,10
+2020-11-11 15:26:21, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:21, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from sys_user
+2020-11-11 15:26:21, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:22, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:22, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:22, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:22, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:22, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:22, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:22, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:22, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:22, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:22, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:23, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:23, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:23, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:23, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:23, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:23, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:23, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:23, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:26:24, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 15:26:24, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 15:50:35, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 15:50:35, Wed basereload.py[line:47] INFO Started reloader process [12144] using statreload
+2020-11-11 15:50:36, Wed main.py[line:434] INFO Started server process [2320]
+2020-11-11 15:50:36, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 15:50:36, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 15:52:55, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 15:52:55, Wed basereload.py[line:47] INFO Started reloader process [10548] using statreload
+2020-11-11 15:52:56, Wed main.py[line:434] INFO Started server process [9896]
+2020-11-11 15:52:56, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 15:52:56, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 15:53:00, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_user` WHERE id = %s
+2020-11-11 15:53:00, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 15:53:01, Wed db_con.py[line:58] INFO SQL执行成功:DELETE FROM `sys_user_role` WHERE user_id = %s
+2020-11-11 15:53:01, Wed db_con.py[line:61] INFO 数据库关闭成功.
+2020-11-11 16:19:42, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:19:42, Wed basereload.py[line:47] INFO Started reloader process [8252] using statreload
+2020-11-11 16:19:44, Wed main.py[line:434] INFO Started server process [12600]
+2020-11-11 16:19:44, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:19:44, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:20:35, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:20:35, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:20:36, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:20:36, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:21:04, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\python\fast_api\app\api\banner\views.py", line 50, in banner_sele
+    if path not in Jur_path:
+TypeError: argument of type 'coroutine' is not iterable
+2020-11-11 16:22:40, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:22:40, Wed basereload.py[line:47] INFO Started reloader process [10080] using statreload
+2020-11-11 16:22:42, Wed main.py[line:434] INFO Started server process [6580]
+2020-11-11 16:22:42, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:22:42, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:22:58, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:22:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:22:58, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:22:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:23:20, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:23:20, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:23:21, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:23:21, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:23:36, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:23:36, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:23:36, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:23:36, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:23:36, Wed db_con.py[line:85] ERROR 数据库连接失败.
+	ERROR:(1054, "Unknown column 'sys_role.id' in 'where clause'")
+2020-11-11 16:23:36, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 176, in app
+    dependency_overrides_provider=dependency_overrides_provider,
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\dependencies\utils.py", line 550, in solve_dependencies
+    solved = await call(**sub_values)
+  File "D:\python\fast_api\app\common\role_auth.py", line 39, in Jurisdiction
+    uri.append(sql3[0][0])
+TypeError: 'NoneType' object is not subscriptable
+2020-11-11 16:24:47, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:24:47, Wed basereload.py[line:47] INFO Started reloader process [14396] using statreload
+2020-11-11 16:24:48, Wed main.py[line:434] INFO Started server process [13460]
+2020-11-11 16:24:48, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:24:48, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:24:49, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:24:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:24:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:24:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:24:49, Wed db_con.py[line:85] ERROR 数据库连接失败.
+	ERROR:(1054, "Unknown column 'sys_role.id' in 'where clause'")
+2020-11-11 16:24:49, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 176, in app
+    dependency_overrides_provider=dependency_overrides_provider,
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\dependencies\utils.py", line 550, in solve_dependencies
+    solved = await call(**sub_values)
+  File "D:\python\fast_api\app\common\role_auth.py", line 40, in Jurisdiction
+    uri.append(sql3[0][0])
+TypeError: 'NoneType' object is not subscriptable
+2020-11-11 16:25:35, Wed statreload.py[line:32] WARNING Detected file change in 'app\common\role_auth.py'. Reloading...
+2020-11-11 16:25:36, Wed main.py[line:434] INFO Started server process [9304]
+2020-11-11 16:25:36, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:25:36, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:29:11, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:29:11, Wed basereload.py[line:47] INFO Started reloader process [12396] using statreload
+2020-11-11 16:29:12, Wed main.py[line:434] INFO Started server process [7804]
+2020-11-11 16:29:12, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:29:12, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:29:15, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:29:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:29:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:29:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:29:15, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:29:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:29:48, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:29:48, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:29:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 16:29:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:30:08, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:30:08, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:30:09, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:30:09, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:30:09, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:30:09, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:31:48, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:31:48, Wed basereload.py[line:47] INFO Started reloader process [9500] using statreload
+2020-11-11 16:31:49, Wed main.py[line:434] INFO Started server process [6084]
+2020-11-11 16:31:49, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:31:49, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:31:57, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:31:57, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:31:58, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:31:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:31:58, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:31:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:32:15, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:32:15, Wed basereload.py[line:47] INFO Started reloader process [13420] using statreload
+2020-11-11 16:32:16, Wed main.py[line:434] INFO Started server process [1368]
+2020-11-11 16:32:16, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:32:16, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:32:20, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:32:20, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:32:20, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:32:20, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:32:21, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:32:21, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:32:58, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:32:58, Wed basereload.py[line:47] INFO Started reloader process [15620] using statreload
+2020-11-11 16:32:59, Wed main.py[line:434] INFO Started server process [16084]
+2020-11-11 16:32:59, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:32:59, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:33:13, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:33:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:33:13, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:33:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:33:13, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:33:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:35:28, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:35:28, Wed basereload.py[line:47] INFO Started reloader process [13400] using statreload
+2020-11-11 16:35:29, Wed main.py[line:434] INFO Started server process [6344]
+2020-11-11 16:35:29, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:35:29, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:35:34, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:35:34, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:35:34, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:35:34, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:35:34, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:35:34, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:35:58, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 16:35:58, Wed basereload.py[line:47] INFO Started reloader process [9404] using statreload
+2020-11-11 16:35:59, Wed main.py[line:434] INFO Started server process [6368]
+2020-11-11 16:35:59, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:35:59, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 16:36:00, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 16:36:00, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:36:01, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.id,sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 16:36:01, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:36:01, Wed db_con.py[line:78] INFO SQL执行成功:select sys_resource.uri from sys_resource,sys_role_resource where sys_resource.id=sys_role_resource.resource_id and sys_role_resource.role_id=%s
+2020-11-11 16:36:01, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 16:36:40, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\banner\views.py'. Reloading...
+2020-11-11 16:36:42, Wed main.py[line:434] INFO Started server process [5516]
+2020-11-11 16:36:42, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 16:36:42, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 17:35:02, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 17:35:02, Wed basereload.py[line:47] INFO Started reloader process [12320] using statreload
+2020-11-11 17:35:04, Wed main.py[line:434] INFO Started server process [5432]
+2020-11-11 17:35:04, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 17:35:04, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 17:35:25, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 17:35:25, Wed basereload.py[line:47] INFO Started reloader process [17336] using statreload
+2020-11-11 17:35:26, Wed main.py[line:434] INFO Started server process [14712]
+2020-11-11 17:35:26, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 17:35:26, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 17:36:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:36:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:36:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:36:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:36:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:36:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:36:10, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:36:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:42:54, Wed config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 17:42:54, Wed basereload.py[line:47] INFO Started reloader process [11412] using statreload
+2020-11-11 17:42:55, Wed main.py[line:434] INFO Started server process [16436]
+2020-11-11 17:42:55, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 17:42:55, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 17:43:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:43:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:43:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:43:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:43:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:43:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 17:43:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job_flow WHERE job_flow<=4 AND status>=4 AND job_flow=%s AND job_id=%s
+2020-11-11 17:43:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:26:24, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:26:24, Wed basereload.py[line:47] INFO Started reloader process [16460] using statreload
+2020-11-11 23:26:25, Wed main.py[line:422] INFO Started server process [7572]
+2020-11-11 23:26:25, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:26:25, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:27:47, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:27:47, Wed basereload.py[line:47] INFO Started reloader process [11484] using statreload
+2020-11-11 23:27:48, Wed main.py[line:422] INFO Started server process [16388]
+2020-11-11 23:27:48, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:27:48, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:28:02, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:28:02, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:28:53, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:28:53, Wed basereload.py[line:47] INFO Started reloader process [288] using statreload
+2020-11-11 23:28:53, Wed main.py[line:422] INFO Started server process [18080]
+2020-11-11 23:28:53, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:28:53, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:28:56, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:28:56, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:29:29, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:29:29, Wed basereload.py[line:47] INFO Started reloader process [16388] using statreload
+2020-11-11 23:29:30, Wed main.py[line:422] INFO Started server process [17388]
+2020-11-11 23:29:30, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:29:30, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:29:32, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:29:32, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:29:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 23:29:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:29:52, Wed db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-11 23:29:52, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:30:16, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:30:16, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\project\views.py", line 23, in project_select
+    result, df, df_count = curd_category.project_select(req_dict)
+  File "F:\python\fast_api\app\api\project\crud\project.py", line 46, in project_select
+    token = parames["token"]
+KeyError: 'token'
+2020-11-11 23:30:53, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:30:53, Wed basereload.py[line:47] INFO Started reloader process [19280] using statreload
+2020-11-11 23:30:54, Wed main.py[line:422] INFO Started server process [2888]
+2020-11-11 23:30:54, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:30:54, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:30:56, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:30:56, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\project\views.py", line 24, in project_select
+    result, df, df_count = curd_category.project_select(req_dict)
+  File "F:\python\fast_api\app\api\project\crud\project.py", line 50, in project_select
+    config.SECRET_KEY, algorithms=[ALGORITHM]
+  File "D:\ProgramData\Anaconda3\lib\site-packages\jose\jwt.py", line 154, in decode
+    payload = jws.verify(token, key, algorithms, verify=verify_signature)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\jose\jws.py", line 77, in verify
+    header, payload, signing_input, signature = _load(token)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\jose\jws.py", line 185, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+AttributeError: 'dict' object has no attribute 'rsplit'
+2020-11-11 23:31:43, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:31:43, Wed basereload.py[line:47] INFO Started reloader process [16880] using statreload
+2020-11-11 23:31:44, Wed main.py[line:422] INFO Started server process [17160]
+2020-11-11 23:31:44, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:31:44, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:31:46, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:33:11, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:33:11, Wed basereload.py[line:47] INFO Started reloader process [17040] using statreload
+2020-11-11 23:33:12, Wed main.py[line:422] INFO Started server process [5244]
+2020-11-11 23:33:12, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:33:12, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:33:15, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:33:16, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:33:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:33:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:33:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:33:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:33:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:17, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\project\views.py", line 26, in project_select
+    print(df[(curpage-1)*10,pagesize])
+TypeError: 'IndexError' object is not subscriptable
+2020-11-11 23:33:29, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:33:29, Wed basereload.py[line:47] INFO Started reloader process [16232] using statreload
+2020-11-11 23:33:30, Wed main.py[line:422] INFO Started server process [8284]
+2020-11-11 23:33:30, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:33:30, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:33:46, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:33:46, Wed basereload.py[line:47] INFO Started reloader process [8648] using statreload
+2020-11-11 23:33:47, Wed main.py[line:422] INFO Started server process [17992]
+2020-11-11 23:33:47, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:33:47, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:33:50, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:33:51, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:33:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:33:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:53, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:33:53, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:53, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:33:53, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:53, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:33:53, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:33:53, Wed h11_impl.py[line:392] ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 81, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\middleware\debug.py", line 78, in __call__
+    await self.app(scope, receive, inner_send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\applications.py", line 181, in __call__
+    await super().__call__(scope, receive, send)  # pragma: no cover
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 183, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "D:\ProgramData\Anaconda3\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "F:\python\fast_api\app\api\project\views.py", line 26, in project_select
+    print(df[(curpage-1)*10:pagesize])
+TypeError: 'IndexError' object is not subscriptable
+2020-11-11 23:34:10, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:34:10, Wed basereload.py[line:47] INFO Started reloader process [18168] using statreload
+2020-11-11 23:34:11, Wed main.py[line:422] INFO Started server process [3336]
+2020-11-11 23:34:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:34:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:34:15, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:34:16, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:34:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:34:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:34:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:34:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:34:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:34:17, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:34:17, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:34:18, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:34:18, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:35:10, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:35:10, Wed basereload.py[line:47] INFO Started reloader process [4248] using statreload
+2020-11-11 23:35:10, Wed main.py[line:422] INFO Started server process [15824]
+2020-11-11 23:35:10, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:35:10, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:35:13, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:35:13, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:35:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:35:14, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:35:14, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:35:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:35:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:35:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:35:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:35:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:35:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:36:03, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:36:03, Wed basereload.py[line:47] INFO Started reloader process [14396] using statreload
+2020-11-11 23:36:04, Wed main.py[line:422] INFO Started server process [18752]
+2020-11-11 23:36:04, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:36:04, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:36:07, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:36:07, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:36:07, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:36:07, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:36:07, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:36:08, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:36:08, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:36:09, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:36:09, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:36:09, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:36:09, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:37:24, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:37:24, Wed basereload.py[line:47] INFO Started reloader process [18840] using statreload
+2020-11-11 23:37:25, Wed main.py[line:422] INFO Started server process [14632]
+2020-11-11 23:37:25, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:37:25, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:37:29, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:37:30, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:37:30, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:37:30, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:37:30, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:37:31, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:37:31, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:37:31, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:37:31, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:37:31, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:37:31, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:38:12, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:38:12, Wed basereload.py[line:47] INFO Started reloader process [10228] using statreload
+2020-11-11 23:38:12, Wed main.py[line:422] INFO Started server process [19032]
+2020-11-11 23:38:12, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:38:12, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:38:15, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:39:20, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:39:20, Wed basereload.py[line:47] INFO Started reloader process [16232] using statreload
+2020-11-11 23:39:21, Wed main.py[line:422] INFO Started server process [18268]
+2020-11-11 23:39:21, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:39:21, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:39:24, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:39:24, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:39:24, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:39:25, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:39:25, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:39:26, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job ORDER BY create_time ASC
+2020-11-11 23:39:26, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:39:26, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:39:26, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:39:26, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:39:26, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:40:46, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:40:46, Wed basereload.py[line:47] INFO Started reloader process [16924] using statreload
+2020-11-11 23:40:47, Wed main.py[line:422] INFO Started server process [18444]
+2020-11-11 23:40:47, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:40:47, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:40:49, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:40:49, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:40:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:40:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:40:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:40:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:40:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:40:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:40:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:40:52, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:40:52, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:41:37, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:41:37, Wed basereload.py[line:47] INFO Started reloader process [15260] using statreload
+2020-11-11 23:41:38, Wed main.py[line:422] INFO Started server process [7784]
+2020-11-11 23:41:38, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:41:38, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:41:39, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:41:39, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:41:39, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:41:40, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:41:40, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:41:41, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:41:41, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:41:41, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:41:41, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:41:42, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:41:42, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:42:58, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:42:58, Wed basereload.py[line:47] INFO Started reloader process [18400] using statreload
+2020-11-11 23:42:59, Wed main.py[line:422] INFO Started server process [17492]
+2020-11-11 23:42:59, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:42:59, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:43:01, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:43:02, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:43:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:43:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:43:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:43:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:43:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:54, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:43:54, Wed basereload.py[line:47] INFO Started reloader process [19252] using statreload
+2020-11-11 23:43:55, Wed main.py[line:422] INFO Started server process [17352]
+2020-11-11 23:43:55, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:43:55, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:43:58, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:43:58, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:43:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:58, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:43:58, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:59, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:43:59, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:43:59, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:43:59, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:44:00, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:44:00, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:10, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:45:10, Wed basereload.py[line:47] INFO Started reloader process [18696] using statreload
+2020-11-11 23:45:11, Wed main.py[line:422] INFO Started server process [15208]
+2020-11-11 23:45:11, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:45:11, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:45:13, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:45:14, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:45:14, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:14, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:45:14, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:45:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:15, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:15, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:45:16, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:45:16, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:50, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:46:50, Wed basereload.py[line:47] INFO Started reloader process [15876] using statreload
+2020-11-11 23:46:51, Wed main.py[line:422] INFO Started server process [4564]
+2020-11-11 23:46:51, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:46:51, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:46:53, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:46:53, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:46:53, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:53, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:46:53, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:54, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:46:54, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:54, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:54, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:54, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:54, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:55, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:55, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:55, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:55, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:55, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:55, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:46:55, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:46:55, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:08, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:49:08, Wed basereload.py[line:47] INFO Started reloader process [13188] using statreload
+2020-11-11 23:49:08, Wed main.py[line:422] INFO Started server process [7392]
+2020-11-11 23:49:08, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:49:08, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:49:10, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:49:10, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:49:10, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:11, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:49:11, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:12, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:49:12, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:12, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:12, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:12, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:12, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:12, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:12, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:12, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:12, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:13, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:13, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:49:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:49:13, Wed db_con.py[line:78] INFO SQL执行成功:SELECT cust_name FROM b_customer_manager WHERE user_id=%s
+2020-11-11 23:49:13, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:39, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:50:39, Wed basereload.py[line:47] INFO Started reloader process [18332] using statreload
+2020-11-11 23:50:40, Wed main.py[line:422] INFO Started server process [19292]
+2020-11-11 23:50:40, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:50:40, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:50:48, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:50:48, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:50:48, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:48, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:50:48, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:50:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:49, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:49, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:50, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:50, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:50:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:50:51, Wed db_con.py[line:78] INFO SQL执行成功:SELECT cust_name FROM b_customer_manager WHERE user_id=%s
+2020-11-11 23:50:51, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:52:40, Wed config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-11 23:52:40, Wed basereload.py[line:47] INFO Started reloader process [15780] using statreload
+2020-11-11 23:52:40, Wed main.py[line:422] INFO Started server process [10692]
+2020-11-11 23:52:40, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:52:40, Wed on.py[line:38] INFO Application startup complete.
+2020-11-11 23:53:01, Wed base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-11 23:53:01, Wed db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-11 23:53:01, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:01, Wed db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-11 23:53:01, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s ORDER BY create_time ASC
+2020-11-11 23:53:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:02, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:02, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:03, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:03, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:04, Wed db_con.py[line:78] INFO SQL执行成功:SELECT * from b_job WHERE manager_id=%s AND pro_no=%s ORDER BY create_time ASC 
+2020-11-11 23:53:04, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:53:04, Wed db_con.py[line:78] INFO SQL执行成功:SELECT cust_name FROM b_customer_manager WHERE user_id=%s
+2020-11-11 23:53:04, Wed db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-11 23:57:08, Wed statreload.py[line:32] WARNING Detected file change in 'app\api\project\crud\project.py'. Reloading...
+2020-11-11 23:57:09, Wed main.py[line:422] INFO Started server process [15692]
+2020-11-11 23:57:09, Wed on.py[line:26] INFO Waiting for application startup.
+2020-11-11 23:57:09, Wed on.py[line:38] INFO Application startup complete.

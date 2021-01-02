@@ -1,0 +1,824 @@
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [11428] using statreload
+INFO main.py:422 Started server process [5912]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [12272] using statreload
+INFO main.py:422 Started server process [8072]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [7912] using statreload
+INFO main.py:422 Started server process [4888]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [8540] using statreload
+INFO main.py:422 Started server process [11260]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [1280] using statreload
+INFO main.py:422 Started server process [5948]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [11556] using statreload
+INFO main.py:422 Started server process [12860]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE b_customer_manager SET cust_name=%s,org_name=%s,tel=%s,phone=%s,company=%s,job_number=%s,profile=%s,image=%s,create_time=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE sys_user SET face_img=%s,update_time=%s,username=%s,nick_name=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [11140] using statreload
+INFO main.py:422 Started server process [8468]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE b_customer_manager SET cust_name=%s,org_name=%s,tel=%s,phone=%s,company=%s,job_number=%s,profile=%s,image=%s,create_time=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE sys_user SET face_img=%s,update_time=%s,username=%s,nick_name=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE b_customer_manager SET cust_name=%s,org_name=%s,tel=%s,phone=%s,company=%s,job_number=%s,profile=%s,image=%s,create_time=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE sys_user SET face_img=%s,update_time=%s,username=%s,nick_name=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE b_customer_manager SET cust_name=%s,org_name=%s,tel=%s,phone=%s,company=%s,job_number=%s,profile=%s,image=%s,create_time=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE sys_user SET face_img=%s,update_time=%s,username=%s,nick_name=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 0,20
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 0,20
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [11604] using statreload
+INFO main.py:422 Started server process [9724]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:DELETE FROM `b_customer_manager` WHERE id = %s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:DELETE FROM `sys_user_role` WHERE user_id = %s
+INFO db_con.py:61 数据库关闭成功.
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1054, "Unknown column 'user_id' in 'where clause'")
+WARNING statreload.py:32 Detected file change in 'app\api\customer\crud\customer.py'. Reloading...
+INFO main.py:422 Started server process [7808]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [14316] using statreload
+INFO main.py:422 Started server process [1088]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:INSERT INTO `b_customer_manager`(id, user_id, cust_name, org_name, tel, phone, company,job_number,profile,image,create_time) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:INSERT INTO sys_user_role(user_id,role_id) VALUES (%s,%s)
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:INSERT INTO sys_user(id,username,password,openid,nick_name,face_img,create_time) VALUES (%s,%s,%s,%s,%s,%s,%s)
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 0,20
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE b_customer_manager SET cust_name=%s,org_name=%s,tel=%s,phone=%s,company=%s,job_number=%s,profile=%s,image=%s,create_time=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:UPDATE sys_user SET face_img=%s,update_time=%s,username=%s,nick_name=%s WHERE id =%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT user_id FROM b_customer_manager WHERE id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:DELETE FROM `b_customer_manager` WHERE id = %s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:DELETE FROM `sys_user_role` WHERE user_id = %s
+INFO db_con.py:61 数据库关闭成功.
+INFO db_con.py:58 SQL执行成功:DELETE FROM `sys_user` WHERE id = %s
+INFO db_con.py:61 数据库关闭成功.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [14828] using statreload
+INFO main.py:422 Started server process [1640]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer WHERE user_id=%s
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 10,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager ORDER BY create_time DESC limit 20,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * FROM b_customer_manager
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 10,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 20,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [13532] using statreload
+INFO main.py:422 Started server process [13412]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [7080] using statreload
+INFO main.py:422 Started server process [11908]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [9092] using statreload
+INFO main.py:422 Started server process [13568]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [2500] using statreload
+INFO main.py:422 Started server process [6680]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR db_con.py:64 数据库连接失败.
+	ERROR:(1366, "Incorrect integer value: 'string' for column 'object' at row 1")
+WARNING statreload.py:32 Detected file change in 'app\api\message\crud\message.py'. Reloading...
+INFO main.py:422 Started server process [2884]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [14576] using statreload
+INFO main.py:422 Started server process [6660]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+WARNING statreload.py:32 Detected file change in 'app\api\message\schemas\message_schema.py'. Reloading...
+INFO main.py:422 Started server process [1948]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:INSERT INTO `b_message_notification`(id, title, remark, content, url, order_no, create_user_name,object,create_time) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [4840] using statreload
+INFO main.py:422 Started server process [13044]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [13880] using statreload
+INFO main.py:422 Started server process [13200]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+WARNING statreload.py:32 Detected file change in 'app\api\message\views.py'. Reloading...
+INFO main.py:422 Started server process [2996]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+INFO config.py:359 Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+INFO basereload.py:47 Started reloader process [1432] using statreload
+INFO main.py:422 Started server process [10540]
+INFO on.py:26 Waiting for application startup.
+INFO on.py:38 Application startup complete.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:UPDATE b_message_notification SET title=%s,remark=%s,content=%s,url=%s,create_time=%s,object=%s WHERE id=%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification ORDER BY create_time DESC  limit 0,10
+INFO db_con.py:81 数据库关闭成功.
+INFO db_con.py:78 SQL执行成功:SELECT * from b_message_notification
+INFO db_con.py:81 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:DELETE FROM `b_message_notification` WHERE id = %s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:INSERT INTO `b_data_temp`(id, name, url, user_id, create_time, update_time) VALUES (%s,%s,%s,%s,%s,%s)
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:UPDATE b_data_temp SET name=%s,url=%s,update_time=%s WHERE id=%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:UPDATE b_data_temp SET name=%s,url=%s,update_time=%s WHERE id=%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:UPDATE b_data_temp SET name=%s,url=%s,update_time=%s WHERE id=%s
+INFO db_con.py:61 数据库关闭成功.
+ERROR base_events.py:1266 Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO db_con.py:58 SQL执行成功:DELETE FROM `b_data_temp` WHERE id = %s
+INFO db_con.py:61 数据库关闭成功.

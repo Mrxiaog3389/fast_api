@@ -1,0 +1,942 @@
+2020-11-13 00:06:05, Fri config.py[line:359] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 00:06:05, Fri basereload.py[line:47] INFO Started reloader process [19732] using statreload
+2020-11-13 00:06:05, Fri main.py[line:422] INFO Started server process [17028]
+2020-11-13 00:06:05, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 00:06:05, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 00:06:10, Fri base_events.py[line:1266] ERROR Exception in callback H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)
+handle: <Handle H11Protocol.connection_made(<_SelectorSoc...e, bufsize=0>>)>
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 125, in connection_made
+    self.client = get_remote_addr(transport)
+  File "D:\ProgramData\Anaconda3\lib\site-packages\uvicorn\protocols\utils.py", line 9, in get_remote_addr
+    return (str(info[0]), int(info[1])) if isinstance(info, tuple) else None
+ValueError: invalid literal for int() with base 10: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2020-11-13 00:06:11, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 00:06:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 00:06:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 00:06:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 00:06:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT pro_no,username,project_name,address,capacity,manager_id,cust_contact,cust_phone,cust_company_name,org_name,org_qualification,img_checker,checker_phone,refuse_reason,create_time from b_job ORDER BY b_job.create_time ASC 
+2020-11-13 00:06:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:27:59, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:27:59, Fri basereload.py[line:47] INFO Started reloader process [4644] using statreload
+2020-11-13 11:28:01, Fri main.py[line:434] INFO Started server process [11596]
+2020-11-13 11:28:01, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:28:01, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:28:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:28:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:28:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:28:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:29:42, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:29:42, Fri basereload.py[line:47] INFO Started reloader process [18108] using statreload
+2020-11-13 11:29:43, Fri main.py[line:434] INFO Started server process [10200]
+2020-11-13 11:29:43, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:29:43, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:30:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:30:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:30:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:30:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:30:35, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:30:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:30:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:30:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:30:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(1) AS total, DATE_FORMAT(b_job.create_time,'%Y-%m-%d') AS days from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 GROUP BY days ORDER BY days DESC;
+2020-11-13 11:30:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:30:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(1) AS total, DATE_FORMAT(b_job.create_time,'%Y-%m-%d') AS days from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND (b_job_flow.status=1 or b_job_flow.status=4) GROUP BY days ORDER BY days DESC;
+2020-11-13 11:30:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:12, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:31:12, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:12, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:31:12, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:13, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:31:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:31:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:31, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:32:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:32:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:32:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:32:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:49, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:35:49, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:49, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:35:49, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:50, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:50, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:50, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:50, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:50, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:50, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:50, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:50, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:50, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:50, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:51, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:51, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:51, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:51, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:51, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:51, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:51, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:51, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:51, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:51, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:52, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:52, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:52, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:52, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:52, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:52, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:52, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:52, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:53, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:53, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:53, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:53, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:53, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:53, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:53, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:53, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:53, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:53, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:54, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:54, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:54, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:54, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:54, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:54, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:54, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:54, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:55, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:55, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:55, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:55, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:55, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:55, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:55, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:55, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:55, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:55, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:56, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:56, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:56, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:56, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:56, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:56, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:56, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:35:56, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:57, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:35:57, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:57, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:57, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:57, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:57, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:57, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:57, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:58, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:58, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:58, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:58, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:58, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:58, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:58, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:58, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:59, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:59, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:59, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:59, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:59, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:59, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:59, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:59, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:35:59, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:35:59, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:00, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:00, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:00, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:00, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:00, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:00, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:00, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:00, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:01, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:01, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:01, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:01, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:01, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:01, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:01, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:01, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:02, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:02, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:02, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:02, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:36:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:36:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:27, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:38:27, Fri basereload.py[line:47] INFO Started reloader process [12432] using statreload
+2020-11-13 11:38:28, Fri main.py[line:434] INFO Started server process [18408]
+2020-11-13 11:38:28, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:38:28, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:38:40, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:38:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:38:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:48, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:48, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:48, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:48, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:48, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:48, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:38:49, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:38:49, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:39:49, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:39:49, Fri basereload.py[line:47] INFO Started reloader process [12124] using statreload
+2020-11-13 11:39:51, Fri main.py[line:434] INFO Started server process [16320]
+2020-11-13 11:39:51, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:39:51, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:40:02, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:40:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:02, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:40:02, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:03, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:03, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:40:10, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:40:10, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:22, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:41:22, Fri basereload.py[line:47] INFO Started reloader process [11900] using statreload
+2020-11-13 11:41:23, Fri main.py[line:434] INFO Started server process [18372]
+2020-11-13 11:41:23, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:41:23, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:41:36, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:41:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:41:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:41:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:41:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:09, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:43:09, Fri basereload.py[line:47] INFO Started reloader process [10200] using statreload
+2020-11-13 11:43:10, Fri main.py[line:434] INFO Started server process [10412]
+2020-11-13 11:43:10, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:43:10, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:43:40, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:43:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:43:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:44, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:44, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:45, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:45, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:46, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:46, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:47, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:47, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:43:48, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:43:48, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:19, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:51:19, Fri basereload.py[line:47] INFO Started reloader process [16948] using statreload
+2020-11-13 11:51:20, Fri main.py[line:434] INFO Started server process [12952]
+2020-11-13 11:51:20, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:51:20, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:51:28, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:51:28, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:28, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:51:28, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:28, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:28, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:28, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:28, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:29, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:29, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:29, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:29, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:29, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:29, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:29, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:29, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:30, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:30, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:30, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:30, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:30, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:30, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:30, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:30, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:31, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:31, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:32, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:32, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:33, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:33, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:34, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:34, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:51:35, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:51:35, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:31, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:53:31, Fri basereload.py[line:47] INFO Started reloader process [7280] using statreload
+2020-11-13 11:53:33, Fri main.py[line:434] INFO Started server process [748]
+2020-11-13 11:53:33, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:53:33, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:53:36, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:53:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:53:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id FROM b_customer_manager WHERE user_id=%s
+2020-11-13 11:53:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:53:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:53:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:02, Fri config.py[line:388] INFO Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+2020-11-13 11:55:02, Fri basereload.py[line:47] INFO Started reloader process [7856] using statreload
+2020-11-13 11:55:03, Fri main.py[line:434] INFO Started server process [7816]
+2020-11-13 11:55:03, Fri on.py[line:26] INFO Waiting for application startup.
+2020-11-13 11:55:03, Fri on.py[line:38] INFO Application startup complete.
+2020-11-13 11:55:13, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:55:13, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:55:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id FROM b_customer_manager WHERE user_id=%s
+2020-11-13 11:55:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:14, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:14, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:15, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:15, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:16, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:16, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:17, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:17, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:18, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:18, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:19, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:19, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:20, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:20, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:20, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:20, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:20, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:20, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:20, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:20, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:55:21, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s AND manager_id=%s GROUP BY b_job.create_time
+2020-11-13 11:55:21, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:56:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:12, Fri db_con.py[line:78] INFO SQL执行成功:SELECT id,username,`password` from sys_user WHERE username=%s
+2020-11-13 11:56:12, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:36, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:56:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:56:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:36, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:36, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:37, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:37, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:38, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:38, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:39, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:39, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:40, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:40, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:41, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:41, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:42, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:42, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:56:43, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:56:43, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:04, Fri db_con.py[line:78] INFO SQL执行成功:select id from sys_user WHERE username=%s
+2020-11-13 11:57:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:04, Fri db_con.py[line:78] INFO SQL执行成功:SELECT sys_role.role_name from sys_role,sys_user_role WHERE sys_role.id=sys_user_role.role_id and sys_user_role.user_id=%s
+2020-11-13 11:57:04, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:05, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:05, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:06, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:06, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:07, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:07, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:08, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:08, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:09, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:09, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:10, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:10, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:10, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:10, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:10, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:10, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:10, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:10, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
+2020-11-13 11:57:11, Fri db_con.py[line:78] INFO SQL执行成功:SELECT COUNT(*),b_job.create_time from b_job,b_job_flow WHERE b_job.pro_no=b_job_flow.job_id AND b_job_flow.status>3 AND day(b_job.create_time)=%s AND year(b_job.create_time)=%s AND month(b_job.create_time)=%s GROUP BY b_job.create_time
+2020-11-13 11:57:11, Fri db_con.py[line:81] INFO 数据库关闭成功.
