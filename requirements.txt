@@ -1,0 +1,9 @@
+-i https://mirrors.aliyun.com/pypi/simple
+typing==3.6.4
+python-jose==3.2.0
+fastapi==0.61.1
+uvicorn==0.12.1
+sqlalchemy==1.2.7
+pymysql==0.10.1
+pandas==0.23.0
+starlette==0.13.6
