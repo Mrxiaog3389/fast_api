@@ -7,7 +7,6 @@
 pip install -r requirements.txt
 
 本地测试
-# 命令行输入
 uvicorn main:app --host 0.0.0.0
-# 浏览器访问
+浏览器访问
 http://127.0.0.1:8000/docs
