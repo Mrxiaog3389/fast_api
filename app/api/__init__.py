@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2020/12/20 10:40
+# @Author  : Xiaoyunlong
 from fastapi import APIRouter
 from . import subject,test,user,banner,customer,message,material,project,home
 api_router = APIRouter()

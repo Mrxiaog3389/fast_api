@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2020/12/20 10:40
+# @Author  : Xiaoyunlong
 from app.setting import main_init
 from database.db_con import Db_Connection
 import time,json,uuid

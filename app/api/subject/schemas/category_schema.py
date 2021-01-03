@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2020/12/20 10:40
+# @Author  : Xiaoyunlong
 from typing import Union, List
 from pydantic import BaseModel, AnyHttpUrl, conint
 
